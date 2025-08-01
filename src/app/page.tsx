@@ -1,103 +1,77 @@
-import Image from "next/image";
+import { FaCircle } from "react-icons/fa";
+import ChatSelect from "./Components/ChatSelect";
+import NavigationBar from "./Components/NavigationBar";
+import { BsSortDownAlt } from "react-icons/bs";
+import { BiSolidSend } from "react-icons/bi";
+import { RiSendPlane2Fill } from "react-icons/ri";
+import FromPointer from "./Components/Icons/FromPointer";
+import ToPointer from "./Components/Icons/ToPointer";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex flex-row size-full rounded-2xl overflow-hidden gap-[0.2rem]">
+      <div className="flex flex-col w-[35%] max-w-[35%] bg-overlay h-full max-h-full">
+        <div className="p-4 flex flex-row gap-2 bg-active-chat">
+          <input
+            className="p-2 bg-background w-full text-sm rounded-lg"
+            placeholder="Search..."
+            type="text"
+          />
+          <button className="aspect-square p-2 bg-background rounded-lg">
+            <BsSortDownAlt className="size-6 text-dark-blue" />
+          </button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <div className="flex flex-col w-full h-full max-w-full max-h-full overflow-auto">
+          <ChatSelect />
+          <ChatSelect />
+          <ChatSelect />
+          <ChatSelect />
+          <ChatSelect />
+          <ChatSelect />
+          <ChatSelect />
+          <ChatSelect />
+          <ChatSelect />
+          <ChatSelect />
+          <ChatSelect />
+          <ChatSelect />
+          <ChatSelect />
+          <ChatSelect />
+          <ChatSelect />
+          <ChatSelect />
+        </div>
+      </div>
+      <div className="flex flex-col max-w-full w-full bg-chat-background">
+        <div className="w-full flex flex-col p-6 py-4 bg-active-chat">
+          <p className="font-bold">A130733</p>
+          <span className="text-xs flex flex-row gap-1 items-center">
+            <FaCircle className="size-2 text-success" /> Online
+          </span>
+        </div>
+        <div className="flex flex-col gap-2 p-4 min-h-0 flex-1 w-full bg-chat">
+          <div className="flex flex-row items-start">
+            <FromPointer className="size-5 text-background" />
+            <div className="p-2.5 bg-background rounded-lg rounded-tl-none text-sm">
+              Dear Ko/Ci NA request internet untuk ruangan A1307
+            </div>
+          </div>
+          <div className="flex flex-row items-end self-end">
+            <div className="p-2.5 bg-active-chat rounded-lg rounded-br-none text-sm">
+              Oke Wait
+            </div>
+            <ToPointer className="size-5 text-active-chat" />
+          </div>
+        </div>
+        <div className="p-4 flex flex-row gap-2 bg-active-chat">
+          <input
+            className="p-2 bg-background w-full rounded-lg text-sm"
+            placeholder="Message..."
+            type="text"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <button className="aspect-square p-2 bg-background rounded-lg">
+            <RiSendPlane2Fill className="size-6 text-dark-blue" />
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
