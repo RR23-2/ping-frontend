@@ -4,13 +4,16 @@
 :root {
   --background: #F9FAFB;
   --foreground: #0a0a0a;
+  --secondary-text: #B2B2B3;
   --primary: #60A5FA;
   --warning: #FFC107;
-  --overlay: #EEF4FA;
-  --active-chat: #D0E3FA;
-  --hover-chat: #DFECFB;
-  --success: #4BEC9F;
-  --chat-background: #EFF0F1;
+  --headers: #D7E7FB;
+  --chat-background: #F6F8FB;
+  --chat-hover: #EEF4FA;
+  --chat-active: #E7F0FA;
+  --chat-from: #E7F0FA;
+  --chat-to: #E7F0FA;
+  --online: #00D559;
   --dark-blue: #64748B;
 }
 
@@ -20,15 +23,19 @@
 }
 
 @theme inline {
+  --color-dark-blue: var(--dark-blue);
+  --color-secondary-text: var(--secondary-text);
+  --color-online: var(--online);
+  --color-headers: var(--headers);
   --color-background: var(--background);
+  --color-chat-hover: var(--chat-hover);
+  --color-chat-active: var(--chat-active);
+  --color-chat-background: var(--chat-background);
+  --color-chat-from: var(--chat-from);
+  --color-chat-to: var(--chat-to);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-warning: var(--warning);
-  --color-overlay: var(--overlay);
-  --color-active-chat: var(--active-chat);
-  --color-hover-chat: var(--hover-chat);
-  --color-success: var(--success);
-  --color-chat-background: var(--chat-background);
   --color-dark-blue: var(--dark-blue);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
