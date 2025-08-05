@@ -9,9 +9,20 @@ type _ChatFrom = {
 
 export default function ChatFrom({ message, showPopUp }: _ChatFrom) {
   return (
-    <div onContextMenu={showPopUp} className="self-start flex flex-row items-start group">
-      <FromPointer className="group-hover:text-header size-3 text-chat-from" />
-      <div className="group-hover:bg-headers p-2.5 bg-chat-from rounded-lg rounded-tl-none text-sm">
+    <div
+      onContextMenu={showPopUp}
+      className="self-start flex flex-row items-start group"
+    >
+      <FromPointer className="group-hover:text-headers size-3 text-chat-from" />
+      <div className="group-hover:bg-headers p-2.5 bg-chat-from rounded-lg rounded-tl-none text-sm flex flex-col gap-2">
+        {message.repliedMessage && (
+          <div className="bg-background flex-col flex p-2 rounded-lg">
+            <p className="font-bold text-xs">
+              {message.repliedMessage.senderId}
+            </p>
+            <p className="text-xs">{message.repliedMessage.message}</p>
+          </div>
+        )}
         {message.message}
       </div>
       <p className="text-sm text-secondary-text pl-2 self-end">

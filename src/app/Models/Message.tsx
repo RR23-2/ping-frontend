@@ -4,6 +4,7 @@ type _Message = {
     senderId: string;
     timeStamp: Date;
     messageStatus: _MessageStatus;
+    repliedMessage?: _Message;
 }
 
 type _MessageStatus = "Sent" | "Read" | "Sending";

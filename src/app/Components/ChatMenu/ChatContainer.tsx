@@ -112,9 +112,9 @@ export default function ChatContainer({ messages }: _ChatContainer) {
       >
         {messages?.map((c) =>
           c.senderId === senderId ? (
-            <ChatTo showPopUp={showPopUpTo} message={c} />
+            <ChatTo key={c.messageId} showPopUp={showPopUpTo} message={c} />
           ) : (
-            <ChatFrom showPopUp={showPopUpFrom} message={c} />
+            <ChatFrom key={c.messageId} showPopUp={showPopUpFrom} message={c} />
           )
         )}
       </div>

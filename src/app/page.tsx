@@ -19,140 +19,154 @@ export default function Home() {
       timeStamp: new Date("2025-07-30T09:16:45"),
       senderId: "A130733",
       messageId: "msg20",
-      messageStatus: "Sent"
+      messageStatus: "Sent",
+      repliedMessage: {
+        message: "Bisa jadi, ntar aku remote dari RCOMP buat scan.",
+        timeStamp: new Date("2025-07-30T09:16:30"),
+        senderId: "RR23-2",
+        messageId: "msg19",
+        messageStatus: "Read",
+      },
     },
     {
       message: "Bisa jadi, ntar aku remote dari RCOMP buat scan.",
       timeStamp: new Date("2025-07-30T09:16:30"),
       senderId: "RR23-2",
       messageId: "msg19",
-      messageStatus: "Read"
+      messageStatus: "Read",
+      repliedMessage: {
+        message: "Udah dicoba tapi masih, kemungkinan virus?",
+        timeStamp: new Date("2025-07-30T09:16:12"),
+        senderId: "A130733",
+        messageId: "msg18",
+        messageStatus: "Read",
+      },
     },
     {
       message: "Udah dicoba tapi masih, kemungkinan virus?",
       timeStamp: new Date("2025-07-30T09:16:12"),
       senderId: "A130733",
       messageId: "msg18",
-      messageStatus: "Read"
+      messageStatus: "Read",
     },
     {
       message: "Coba ganti port USB-nya dulu ya.",
       timeStamp: new Date("2025-07-30T09:15:45"),
       senderId: "RR23-2",
       messageId: "msg17",
-      messageStatus: "Read"
+      messageStatus: "Read",
     },
     {
       message: "Ko NA, mouse di PC 8 gerak sendiri.",
       timeStamp: new Date("2025-07-30T09:15:12"),
       senderId: "A130733",
       messageId: "msg16",
-      messageStatus: "Read"
+      messageStatus: "Read",
     },
     {
       message: "Thank you ko 🙏🙏",
       timeStamp: new Date("2025-07-30T09:09:00"),
       senderId: "A130733",
       messageId: "msg15",
-      messageStatus: "Read"
+      messageStatus: "Read",
     },
     {
       message: "Noted, aku deploy dari RCOMP.",
       timeStamp: new Date("2025-07-30T09:08:45"),
       senderId: "RR23-2",
       messageId: "msg14",
-      messageStatus: "Read"
+      messageStatus: "Read",
     },
     {
       message: "Office dan VLC, katanya sering nge-lag.",
       timeStamp: new Date("2025-07-30T09:08:22"),
       senderId: "A130733",
       messageId: "msg13",
-      messageStatus: "Read"
+      messageStatus: "Read",
     },
     {
       message: "Update apa? OS atau app?",
       timeStamp: new Date("2025-07-30T09:08:01"),
       senderId: "RR23-2",
       messageId: "msg12",
-      messageStatus: "Read"
+      messageStatus: "Read",
     },
     {
       message: "Ko NA, saya juga perlu update software di PC 6.",
       timeStamp: new Date("2025-07-30T09:07:30"),
       senderId: "A130733",
       messageId: "msg11",
-      messageStatus: "Read"
+      messageStatus: "Read",
     },
     {
       message: "👍",
       timeStamp: new Date("2025-07-30T09:06:10"),
       senderId: "RR23-2",
       messageId: "msg10",
-      messageStatus: "Read"
+      messageStatus: "Read",
     },
     {
       message: "Makasih banyak ko 🙏",
       timeStamp: new Date("2025-07-30T09:06:00"),
       senderId: "A130733",
       messageId: "msg9",
-      messageStatus: "Read"
+      messageStatus: "Read",
     },
     {
       message: "Siap, akan diaktifkan sebentar lagi.",
       timeStamp: new Date("2025-07-30T09:05:42"),
       senderId: "RR23-2",
       messageId: "msg8",
-      messageStatus: "Read"
+      messageStatus: "Read",
     },
     {
       message: "Ko NA, lab A1307 minta request internet.",
       timeStamp: new Date("2025-07-30T09:05:00"),
       senderId: "A130733",
       messageId: "msg7",
-      messageStatus: "Read"
+      messageStatus: "Read",
     },
     {
       message: "Noted.",
       timeStamp: new Date("2025-07-30T08:15:01"),
       senderId: "RR23-2",
       messageId: "msg6",
-      messageStatus: "Read"
+      messageStatus: "Read",
     },
     {
       message: "Sekalian ko cek PC 5, keyboardnya gak kebaca.",
       timeStamp: new Date("2025-07-30T08:14:42"),
       senderId: "A130733",
       messageId: "msg5",
-      messageStatus: "Read"
+      messageStatus: "Read",
     },
     {
       message: "Oke, aku OTW ke lab.",
       timeStamp: new Date("2025-07-30T08:14:10"),
       senderId: "RR23-2",
       messageId: "msg4",
-      messageStatus: "Read"
+      messageStatus: "Read",
     },
     {
       message: "Iya, kabel udah oke semua.",
       timeStamp: new Date("2025-07-30T08:13:45"),
       senderId: "A130733",
       messageId: "msg3",
-      messageStatus: "Read"
+      messageStatus: "Read",
     },
     {
       message: "Sudah dicek kabel power-nya?",
       timeStamp: new Date("2025-07-30T08:13:12"),
       senderId: "RR23-2",
       messageId: "msg2",
-      messageStatus: "Read"
+      messageStatus: "Read",
     },
     {
       message: "Ko NA, PC 12 gak bisa nyala.",
       timeStamp: new Date("2025-07-30T08:12:00"),
       senderId: "A130733",
       messageId: "msg1",
-      messageStatus: "Read"
+      messageStatus: "Read",
     },
   ];
 

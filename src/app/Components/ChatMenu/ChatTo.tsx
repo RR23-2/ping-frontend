@@ -9,7 +9,10 @@ type _ChatTo = {
 
 export default function ChatTo({ message, showPopUp }: _ChatTo) {
   return (
-    <div onContextMenu={showPopUp} className="flex flex-row items-end self-end group">
+    <div
+      onContextMenu={showPopUp}
+      className="flex flex-row items-end self-end group"
+    >
       <div className="flex flex-col pr-2 items-end">
         <p className="text-sm text-secondary-text ">{message.messageStatus}</p>
         <p className="text-sm text-secondary-text">
@@ -20,7 +23,15 @@ export default function ChatTo({ message, showPopUp }: _ChatTo) {
           })}
         </p>
       </div>
-      <div className="p-2.5 bg-chat-to rounded-lg rounded-br-none text-sm group-hover:bg-headers">
+      <div className="p-2.5 bg-chat-to rounded-lg rounded-br-none text-sm group-hover:bg-headers flex flex-col gap-2">
+        {message.repliedMessage && (
+          <div className="bg-background flex-col flex p-2 rounded-lg">
+            <p className="font-bold text-xs">
+              {message.repliedMessage.senderId}
+            </p>
+            <p className="text-xs">{message.repliedMessage.message}</p>
+          </div>
+        )}
         {message.message}
       </div>
       <ToPointer className="size-3 text-chat-to group-hover:text-headers" />
